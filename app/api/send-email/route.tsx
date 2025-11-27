@@ -1,8 +1,10 @@
+import { log } from "console";
 import { NextResponse } from "next/server";
 import nodemailer from "nodemailer";
 
 export async function POST(request: Request) {
   try {
+    console.log("vao api email");
     const body = await request.json();
 
     const { name, email, message } = body;
