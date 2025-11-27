@@ -4,7 +4,7 @@ import nodemailer from "nodemailer";
 
 export async function POST(request: Request) {
   try {
-    console.log("vao api email");
+    console.log("vao be api email");
     const body = await request.json();
 
     const { name, email, message } = body;
